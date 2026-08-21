@@ -103,10 +103,27 @@
             </div>
         </div>
     </div>
+    <div class="flex flex-col gap-8">
+        <div class="flex flex-col gap-1">
+            <p class="text-xs text-[#7e7c96] font-semibold uppercase tracking-wider">Возможности</p>
+            <h2 class="text-[#edeaf5]">Инструмент для серьёзной смерти</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="rounded-xl px-8 py-6 flex gap-6 border border-[#FFFFFF12] bg-[#111118]" v-for="feature in features">
+                <div class="flex items-center justify-center w-10 h-10 rounded-md bg-[#6D56E824] shrink-0">
+                    <p class="text-base text-[#8570f5]">{{ feature.icon }}</p>
+                </div>
+                <div class="flex flex-col gap-1">
+                    <p class="text-base font-bold text-[#edeaf5]">{{ feature.title }}</p>
+                    <p class="text-[17px] leading-[125%] text-[#7e7c96]">{{ feature.desc }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </template>
  
 <script setup>
-/* steps */
+/* data */
 const steps = [
   {
     n: '01',
@@ -122,6 +139,29 @@ const steps = [
     n: '03',
     title: 'Выполняй и адаптируйся',
     desc: 'Отмечай задачи, общайся с коучем, следи за прогрессом. План живёт вместе с тобой.',
+  },
+]
+
+const features = [
+  {
+    icon: '⬡',
+    title: 'ИИ-декомпозиция',
+    desc: 'Опиши цель в свободной форме — система автоматически разбивает её на подцели и конкретные задачи.',
+  },
+  {
+    icon: '◈',
+    title: 'Прогресс в реальном времени',
+    desc: 'Каждая выполненная задача пересчитывает общий прогресс. Видно где ты находишься в любой момент.',
+  },
+  {
+    icon: '◎',
+    title: 'ИИ-коуч',
+    desc: 'Спрашивай что делать дальше, как преодолеть блок или как скорректировать план. Коуч знает твою цель и прогресс.',
+  },
+  {
+    icon: '◆',
+    title: 'Контроль сроков',
+    desc: 'Система отслеживает темп и рассчитывает, успеваешь ли ты к дедлайну. Никаких сюрпризов в последний момент.',
   },
 ]
 </script>
