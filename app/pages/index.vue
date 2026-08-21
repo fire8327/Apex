@@ -143,6 +143,14 @@
         </div>
     </div>
     </div>
+    <div class="py-8 lg:py-24 border-b border-[#FFFFFF21] last:border-none flex flex-col gap-6 items-center text-center">
+        <h2 class="text-[#edeaf5]">Начни прямо сейчас</h2>
+        <p class="text-base text-[#7e7c96]">Поставь первую цель за две минуты. Посмотри как выглядит план.</p>
+        <NuxtLink to="/" class="w-fit max-md:w-full flex items-center gap-1.5 bg-[#6d56e8] text-white px-4 py-2 rounded-md transition-all duration-300 font-semibold hover:-translate-y-px hover:bg-[#8570f5]">
+            <span>Открыть APEX</span>
+            <Icon class="text-xl" name="ic:outline-arrow-right-alt"/>
+        </NuxtLink>
+    </div>
 </template>
  
 <script setup>
