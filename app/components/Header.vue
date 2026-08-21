@@ -1,5 +1,5 @@
 <template>
-    <header class="bg-[#0B0B10E0] py-6 grid-container border-b border-[#FFFFFF12] sticky">
+    <header class="w-full bg-[#0B0B10E0] py-6 grid-container border-b border-[#FFFFFF12] sticky backdrop-blur-md top-0 z-5">
         <nav class="flex items-center justify-between text-base">
             <NuxtLink to="/" class="flex items-center gap-2">
                 <Icon class="text-4xl text-[#6d56e8]" name="tabler:square-letter-a-filled"/>
