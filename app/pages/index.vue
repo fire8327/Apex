@@ -87,8 +87,41 @@
             </div>
         </div>
     </div>
+    <div class="flex flex-col gap-8">
+        <div class="flex flex-col gap-1">
+            <p class="text-sm text-[#7e7c96] font-medium uppercase">Процесс</p>
+            <h2 class="text-[#edeaf5]">Как работает APEX</h2>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-1">
+            <div class="rounded-xl px-8 py-6 flex flex-col gap-6 border border-[#FFFFFF12] even:bg-[#18181f] odd:bg-[#111118]" v-for="step in steps">
+                <p class="text-sm text-[#7e7c96] font-medium">{{ step.n }}</p>
+                <div class="flex items-center justify-center w-10 h-10 rounded-md bg-[#6D56E824]">
+                    <div class="w-4 h-4 rounded-full bg-[#8570f5]"></div>
+                </div>
+                <p class="text-base font-bold text-[#edeaf5]">{{ step.title }}</p>
+                <p class="text-[17px] leading-[125%] text-[#7e7c96]">{{ step.desc }}</p>
+            </div>
+        </div>
+    </div>
 </template>
  
 <script setup>
-
+/* steps */
+const steps = [
+  {
+    n: '01',
+    title: 'Опиши цель',
+    desc: 'В свободной форме — от «разобрать завалы на рабочем столе» до «запустить продукт с первыми клиентами».',
+  },
+  {
+    n: '02',
+    title: 'ИИ строит план',
+    desc: 'Цель разбивается на подцели и конкретные задачи с дедлайнами. Никакого пустого листа.',
+  },
+  {
+    n: '03',
+    title: 'Выполняй и адаптируйся',
+    desc: 'Отмечай задачи, общайся с коучем, следи за прогрессом. План живёт вместе с тобой.',
+  },
+]
 </script>
