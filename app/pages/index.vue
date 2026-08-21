@@ -89,7 +89,7 @@
     </div>
     <div class="flex flex-col gap-8">
         <div class="flex flex-col gap-1">
-            <p class="text-sm text-[#7e7c96] font-medium uppercase">Процесс</p>
+            <p class="text-xs text-[#7e7c96] font-semibold uppercase tracking-wider">Процесс</p>
             <h2 class="text-[#edeaf5]">Как работает APEX</h2>
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-1">

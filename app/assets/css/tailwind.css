@@ -40,5 +40,5 @@ h1 {
 }
 
 h2 {
-    @apply text-[clamp(22px,3.7vw,42px)] leading-[100%]
+    @apply text-[clamp(22px,3vw,32px)] leading-[100%]
 }
